@@ -11,20 +11,18 @@
 <body>
     <script>
         console.log('window.location.host', window.location.host)
-        <!--console.log('window.location.includes(stuff)', window.location.includes('github.io'))-->
-
-        if (window.location.host.includes("github.io")) {
-
-            var imgElement = document.querySelector('img');
-            if (imgElement) {
-                imgElement.src = "https://picsum.photos/id/200/200/300";
-                imgElement.alt = "image displayed because ON github pages";
-            }
-        }
+        console.log('window.location.includes(stuff)', window.location.includes('github.io'))
     </script>
     <main>
         <h1>Iffy</h1>
+
+        if(window.location.includes('github.io')){
+
+        <img src="https://picsum.photos/id/200/200/300" alt="image displayed because ON github pages">
+        } else{
+
         <img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">
+        }
     </main>
 </body>
 
