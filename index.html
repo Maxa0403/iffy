@@ -16,15 +16,15 @@
         <h1>Iffy</h1>
         <script>
             if (window.location.host.includes('github.io')) {
-                var imgElement = document.createElement("img");
-                imgElement.src = "https://picsum.photos/id/200/200/300";
-                imgElement.alt = "image displayed because ON github pages";
-                document.querySelector("main").appendChild(imgElement);
+                var img = document.createElement("img");
+                img.src = "https://picsum.photos/id/200/200/300";
+                img.alt = "image displayed because ON github pages";
+                document.querySelector("main").appendChild(img);
             } else {
-                var imgElement = document.createElement("img");
-                imgElement.src = "https://picsum.photos/id/343/200/300";
-                imgElement.alt = "image displayed because not github pages";
-                document.querySelector("main").appendChild(imgElement);
+                var img1 = document.createElement("img");
+                img1.src = "https://picsum.photos/id/343/200/300";
+                img1.alt = "image displayed because not github pages";
+                document.querySelector("main").appendChild(img1);
             }
         </script>
     </main>
